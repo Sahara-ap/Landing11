@@ -1,3 +1,5 @@
+@import '../src/styles/style-variables/default_variables';
+
 /* Reset styles */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -64,4 +66,129 @@ body * {
   clip-path: inset(100%);
 }
 
+/*------------------------------------------------------------------------------*/
+/*Раздел main выполнен стандартным способом внутри данного файла с использованием правил методики БЭМ*/
 
+.presentation {
+  display: flex;
+  background-image: url(backgrounds/main_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-around;
+  padding: 103px 0 202px 0;
+
+  @media (max-width: $MobileTop) {
+    padding: 100px 15px 32px 15px;
+  }
+
+}
+
+.presentation__container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  color: #000;
+}
+
+.presentation__title {
+  max-width: 780px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-transform: uppercase;
+
+
+  & span {
+    color: #3399E5;
+  }
+}
+
+.presentation__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.presentation__list-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.presentation__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.presentation__item {
+  position: relative;
+  left: 17px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.presentation__item::before {
+  content: '-';
+  position: relative;
+  left: -5px;
+}
+
+.presentation__button-wrapper {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: $MobileTop) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.button {
+  min-width: 183px;
+  padding: 15px 10px 15px 10px;
+  gap: 10px;
+  border-radius: 4px 0px 0px 0px;
+  border: 1px solid black;
+
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transition: all 0.3s;
+    color: #ccc;
+  }
+
+  &:active {
+    transition: all 0.3s;
+    color: #999999;
+  }
+
+  &:disabled {
+    transition: all 0.3s;
+    cursor: auto;
+    background-color: #a1a1a1;
+    color: #c9c9c9;
+  }
+
+  &--blue {
+    background-color: #3E9CDC;
+
+    &:hover,
+    &:focus {
+      background-color: #03349e;
+    }
+  
+    &:active {
+      background-color: #03349e;
+    }
+  }
+}
