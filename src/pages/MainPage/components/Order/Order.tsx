@@ -4,6 +4,7 @@ import { ReactComponent as PercentPic } from "assets/percent.svg";
 import { ReactComponent as InvoicePic } from "assets/invoice.svg";
 import { ReactComponent as SendPic } from "assets/send.svg";
 import { ReactComponent as MoneyPic } from "assets/money.svg";
+import { OrderForm } from "pages/MainPage/components/OrderForm";
 
 export const Order: React.FC = () => {
   return (
@@ -85,7 +86,7 @@ export const Order: React.FC = () => {
           </ul>
         </div>
         <div className="order__form">
-          <form></form>
+          <OrderForm />
         </div>
       </div>
     </section>
