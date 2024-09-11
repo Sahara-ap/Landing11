@@ -1,6 +1,6 @@
 import React from 'react'; 
 
-import S from './MainPage.module.scss'
+import S from './_MainPage.module.scss'
 
 export const MainPage:React.FC = () => {
 

@@ -1,0 +1,37 @@
+.navWrapper {
+  display: flex;
+}
+
+.navListHorizontal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+
+  @media (max-width: 767px) {
+  display: none;
+}
+}
+.navListVertical {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  position: fixed;
+  inset: 100px 0 0 0;
+  z-index: 10;
+  gap: 6px;
+  padding: 15px 0 0 15px;
+  margin-top: 0;
+  background: #fff;
+
+  & svg {
+    flex-shrink: 0;
+    width: 24px;
+  }
+
+  & a {
+    color: #000;
+  }
+}

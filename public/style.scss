@@ -12,22 +12,22 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
+    display: block;
 }
 
 ol, ul {
-  list-style: none;
+    list-style: none;
 }
 
 /* --------------------------------------------------------------------- */
@@ -35,7 +35,7 @@ ol, ul {
 body {
   position: relative;
   margin: 0;
-  font-family: "Lato", "Montserrat", sans-serif;
+  font-family: 'Lato', 'Montserrat', sans-serif;
   background-color: #F4F4F7;
 }
 
@@ -61,6 +61,7 @@ body * {
   white-space: nowrap;
   border: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-}/*# sourceMappingURL=style.css.map */
+  clip-path: inset(100%);
+}
+
+

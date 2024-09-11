@@ -1,9 +1,10 @@
+@import '/src/styles/style-variables/default_variables';
+
 .wrapper {
   display: flex;
   flex: 1 0;
   flex-direction: column;
   width: 100%;
-  max-width: 1600px;
 }
 
 .header {
@@ -12,29 +13,23 @@
   right: 0;
   left: 0;
   z-index: 5;
+
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: flex-end;
   gap: 16px;
-  max-width: 1600px;
-  min-height: 70px;
-  padding: 16px 24px;
-  background-color: #24b2d1;
+  min-height: 100px;
+  background-color: #10101DE5;
 
-  @media (max-width: 767px) {
-    left: 0;
+  @media (max-width: $MobileTop) {
     justify-content: flex-start;
-    min-height: 48px;
-    padding: 12px 16px;
-}
-
+    padding-left: 15px;
+  }
 }
 
 .main {
   position: relative;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   flex: 1 0;
   flex-direction: column;
   width: 100%;
@@ -53,4 +48,6 @@
 
 .footer {
   display: flex;
+  background-color:#3D4050;
+  min-height: 80px;
 }

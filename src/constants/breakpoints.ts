@@ -1,0 +1,5 @@
+export enum BreakPoint {
+    DesktopTop = '1600px',
+    DesktopLow = '1440px',
+    MobileTop = '767px',
+  }

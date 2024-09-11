@@ -1,0 +1,22 @@
+@import '/src/styles/style-variables/default_variables';
+
+.button {
+    width: 24px;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+ 
+
+  &:hover,
+  &:focus,
+  &:active {
+    svg path {
+         fill: #ccc;
+    }
+  }
+
+  @media (min-width: $MobileTop) {
+    display: none;
+}
+}
