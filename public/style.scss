@@ -69,14 +69,27 @@ body * {
 /*------------------------------------------------------------------------------*/
 /*Раздел main выполнен стандартным способом внутри данного файла с использованием правил методики БЭМ*/
 
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: 1172px;
+  
+  @media (max-width: $MobileTop) {
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+}
+
 .presentation {
   display: flex;
-  background-image: url(backgrounds/main_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   justify-content: space-around;
   padding: 103px 0 202px 0;
+  background-image: url(backgrounds/main_bg.png);
 
   @media (max-width: $MobileTop) {
     padding: 100px 15px 32px 15px;
@@ -120,15 +133,16 @@ body * {
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 5px;
 }
 
 .presentation__item {
-  position: relative;
-  left: 17px;
+  padding-left: 17px;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+
 }
 
 .presentation__item::before {
@@ -212,8 +226,8 @@ body * {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
+
 .order__title {
   margin-bottom: 30px;
   font-size: 36px;
@@ -248,9 +262,7 @@ body * {
 .order__scheme-path {
   display: flex;
   flex-wrap: wrap;
-
-
-  gap: 30px;
+  gap: 10px;
 
   & svg {
     flex-shrink: 0;
@@ -288,7 +300,7 @@ body * {
 
 .order__dots-wrapper {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 
   & .order__dots {
     flex-shrink: 0;

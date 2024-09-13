@@ -35,7 +35,6 @@ export const Navigation: React.FC<INavigationProps> = ({closeMainMenu, isOpen, i
             linkTo={linkTo}
             text={text}
             onClick = {handleLinkClick}
-            // isCurrent={pathname === linkTo}
             isCurrent={current === text}
            />
         ))}

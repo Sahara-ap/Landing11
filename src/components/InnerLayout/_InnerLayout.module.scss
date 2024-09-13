@@ -5,6 +5,21 @@
   flex: 1 0;
   flex-direction: column;
   width: 100%;
+
+  
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  width: 1172px;
+  justify-content: space-between;
+  gap: 16px;
+
+  @media (max-width: $MobileTop) {
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
 }
 
 .header {
@@ -15,16 +30,10 @@
   z-index: 5;
 
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 16px;
   min-height: 100px;
   background-color: #272733;
 
-  @media (max-width: $MobileTop) {
-    justify-content: flex-start;
-    padding-left: 15px;
-  }
+ 
 }
 
 .main {
@@ -38,6 +47,7 @@
   height: auto;
   min-height: auto;
 
+
   @media (max-width: 767px) {
     margin-top: 70px;
   }
@@ -48,4 +58,53 @@
   display: flex;
   background-color:#3D4050;
   min-height: 80px;
+  justify-content: center;
 }
+
+@mixin footerList {
+  position: relative;;
+  display: flex;
+  min-width: 116px;
+  gap: 38px;
+  padding-left: 36px;
+
+  @media (max-width: $MobileTop) {
+    gap: 20px;
+    padding-left: 16px;
+
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 1px;
+    background-color: #fff;
+  }
+}
+
+.copyright {
+  margin-right: 40px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  color: #FFFFFF;
+}
+
+.paymentList {
+  @include footerList;
+  margin-right: 43px;
+
+  @media (max-width: $MobileTop) {
+    margin-right: 20px;
+
+  }
+}
+
+.socialList {
+  @include footerList;
+}
+
