@@ -133,10 +133,12 @@
 
 .paymentList {
   @include footerList;
+  gap: 20px;
   margin-right: 43px;
 
   @media (max-width: $MobileTop) {
-    margin-right: 20px;
+    margin-right: 10px;
+    gap: 5px;
 
   }
 }
