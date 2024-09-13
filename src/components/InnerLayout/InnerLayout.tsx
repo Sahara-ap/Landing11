@@ -40,7 +40,7 @@ export const InnerLayout: React.FC = () => {
   return (
     <div className={S.wrapper}>
       <header className={S.header}>
-        <div className={S.container}>
+        <div className={S.headerContainer}>
           <BurgerButton
             isMainMenuOpened={isMainMenuOpened}
             handleMainMenuOpen={handleMainMenuOpen}
@@ -57,7 +57,7 @@ export const InnerLayout: React.FC = () => {
         <Outlet />
       </main>
       <footer className={S.footer}>
-        <div className={S.container}>
+        <div className={S.footerContainer}>
           <span className={S.copyright}>
             © 2018 «LoremIpsum.net» Все права защищены.
           </span>

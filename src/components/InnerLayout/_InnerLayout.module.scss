@@ -9,14 +9,38 @@
   
 }
 
-.container {
-  margin: auto;
+@mixin container {
   display: flex;
-  width: 1172px;
+  flex-wrap: wrap;
+  word-break: break-all;
+  width: 100%;
+  max-width: 1172px;
   justify-content: space-between;
   gap: 16px;
 
+
   @media (max-width: $MobileTop) {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+    max-width: 1172px;
+    gap: 16px;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+}
+
+.headerContainer {
+  @include container;
+
+  @media (max-width: $MobileTop) {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+    max-width: 1172px;
+    gap: 16px;
     justify-content: flex-start;
     padding-left: 15px;
   }
@@ -53,6 +77,11 @@
   }
 }
 
+.footerContainer {
+  @include container;
+  flex-wrap: nowrap;
+  gap: 0;
+}
 
 .footer {
   display: flex;
@@ -64,9 +93,10 @@
 @mixin footerList {
   position: relative;;
   display: flex;
-  min-width: 116px;
-  gap: 38px;
+  flex-wrap: wrap;
+  word-break: break-all;
   padding-left: 36px;
+  justify-content: space-between;
 
   @media (max-width: $MobileTop) {
     gap: 20px;

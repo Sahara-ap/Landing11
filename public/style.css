@@ -73,7 +73,7 @@ body * {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  width: 1172px;
+  max-width: 1172px;
 }
 @media (max-width: 767px) {
   .container {
