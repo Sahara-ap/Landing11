@@ -317,7 +317,8 @@ body * {
     grid-template-areas: "select" "email" "name" "range" "file";
   }
 }
-.form div {
+
+.input {
   border: 1px solid #fff;
   height: 48px;
 }

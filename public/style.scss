@@ -323,7 +323,6 @@ body * {
 }
 .form {
   display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   grid-template-areas: 
@@ -339,13 +338,14 @@ body * {
     "name"
     "range" 
     "file" 
-  ;
+    ;
   }
+ 
+}
 
-  & div {
-    border: 1px solid #fff;
-    height: 48px;
-  }
+.input {
+  border: 1px solid #fff;
+  height: 48px;
 }
 
 .form__input-range {
@@ -403,6 +403,5 @@ body * {
       height: 20px;
       background-image: url(svg/file.svg);
     }
-
   }
 }
