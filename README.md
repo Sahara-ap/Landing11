@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Пойдич Александр
+
+В проекте осуществлена верстка с адаптивом для мобилки
+
+сделаны кастомные селект и инпут-рэндж
+
+
 
 ## Available Scripts
 
