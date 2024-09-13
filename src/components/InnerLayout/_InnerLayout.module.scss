@@ -17,6 +17,8 @@
   max-width: 1172px;
   justify-content: space-between;
   gap: 16px;
+  width: 100%;
+
 
 
   @media (max-width: $MobileTop) {
@@ -25,6 +27,8 @@
     flex-wrap: wrap;
     word-break: break-all;
     max-width: 1172px;
+    width: 100%;
+
     gap: 16px;
     justify-content: flex-start;
     padding-left: 15px;
@@ -33,6 +37,7 @@
 
 .headerContainer {
   @include container;
+  margin: auto;
 
   @media (max-width: $MobileTop) {
     margin: auto;
@@ -40,6 +45,7 @@
     flex-wrap: wrap;
     word-break: break-all;
     max-width: 1172px;
+    width: 100%;
     gap: 16px;
     justify-content: flex-start;
     padding-left: 15px;
@@ -81,6 +87,7 @@
   @include container;
   flex-wrap: nowrap;
   gap: 0;
+  align-items: center;
 }
 
 .footer {

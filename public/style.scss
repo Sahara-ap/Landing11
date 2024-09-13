@@ -75,6 +75,8 @@ body * {
   justify-content: space-between;
   gap: 16px;
   max-width: 1172px;
+  width: 100%;
+
   
   @media (max-width: $MobileTop) {
     justify-content: flex-start;
